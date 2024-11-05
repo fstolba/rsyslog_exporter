@@ -20,6 +20,7 @@ ruleset(name="process_stats") {
     type="omprog"
     name="to_exporter"
     binary="/usr/local/bin/rsyslog_exporter [--tls.server-crt=/path/to/tls.crt --tls.server-key=/path/to/tls.key]"
+    forceSingleInstance="on"
   )
 }
 ```
